@@ -1,0 +1,54 @@
+.nav-dev {
+    height: 66px;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: end;
+    gap: 50px;
+    /* background: #000; */
+    background: #3b141c;
+    padding: 20px;
+    font-size: 25px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+li {
+    list-style-type: none;
+}
+
+nav ul{
+    margin-right: 45px;
+}
+
+
+
+nav ul li a {
+    display: block;
+    padding: 10px 25px;
+    font-size: 25px;
+    font-weight: 900;
+    color: rgb(252, 252, 252);
+    border-radius: 30px;
+    transition: all 0.2s ease;
+}
+nav ul li a:hover {
+    color: rgba(0, 0, 0, 0.534);
+    background: #f3961c;
+}
+
+
+.icon{
+    font-size: 40px; /* Adjust the size of the icon */
+}
+

@@ -1,0 +1,69 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Book Display Container */
+  .display-book {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: left;
+    transition: 0.3s;
+  }
+  
+  .display-book:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Book Details */
+  .book-details {
+    padding: 15px;
+    border-left: 5px solid #007bff;
+    background: #f1f1f1;
+    border-radius: 5px;
+  }
+  
+  .book-details p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .book-details strong {
+    color: #007bff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 500px) {
+    .display-book {
+      width: 90%;
+      padding: 15px;
+    }
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .display-book {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  

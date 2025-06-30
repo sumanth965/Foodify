@@ -1,0 +1,45 @@
+-------------------------------------------FRONTEND------------------------------------------------
+cd CLIENT
+npm create vite@latest
+npm install
+select react and javaScript
+npm run dev(link)
+
+Install later
+---------------------
+npm i react-router-dom (Single page application)
+npm install axios(for http)
+
+Folders
+----------
+Inside src
+Remove app.jsx,app.css, and index.css
+create folder pages and components(file name should be in caps(frst letter)
+
+
+----------------------------------BACKEND------------------------------------------------------
+cd SERVER
+npm init-y
+npm i express mongoose
+npm -d nodemon // helpful tool for development 
+create file index.js
+remove test from scripts package.json and type 'dev':'nodemon index.js'
+
+Install later
+-------------------
+npm install cors(connect bcknd and frntnd)
+
+Folders
+----------
+1. Database
+   connection.js
+
+MVC Structure
+-------------------
+1.Model
+   user.js
+2.Routes
+   userRoutes.js
+3.Controllers
+   userCtrl.js
+
