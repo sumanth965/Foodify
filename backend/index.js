@@ -1,26 +1,33 @@
 const express = require('express');
-const RunServer = require('./database/connection'); // Automatically connects to MongoDB
+const dotenv = require('dotenv');
+const cors = require('cors');
+const helmet = require('helmet');
+
+const RunServer = require('./database/connection');
 const userRoutes = require('./routes/userRoutes');
 const contactRoutes = require('./routes/contactRoutes');
-const cors = require('cors');      // Cross-Origin Resource Sharing
-const helmet = require('helmet');  // Security headers
+
+// Load environment variables
+dotenv.config();
 
 const app = express();
-const port = 3000;
+
+// Use port from .env or fallback to 3000
+const port = process.env.PORT || 3000;
 
 // Connect to MongoDB
 RunServer();
 
 // Middleware
-app.use(express.json()); // Parse incoming JSON
-app.use(cors());         // Allow requests from other origins
-app.use(helmet());       // Basic security
+app.use(express.json());        // Parse incoming JSON
+app.use(cors());                // Enable Cross-Origin Resource Sharing
+app.use(helmet());              // Set security-related HTTP headers
 
-// API Routes
+// Routes
 app.use('/api/v1/user', userRoutes);
 app.use('/api/v1', contactRoutes);
 
-// Start the server
+// Start server
 app.listen(port, () => {
-  console.log(`🚀 Server is running on port ${port}`);
+    console.log(`🚀 Server is running on port ${port}`);
 });
