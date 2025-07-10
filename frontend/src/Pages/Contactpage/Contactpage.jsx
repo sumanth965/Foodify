@@ -30,7 +30,7 @@ export default function Contactpage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3000/api/v1/contact', formData);
+      await axios.post('https://foodifyy-backend-g4fx.onrender.com', formData);
       alert('Your order was delivered successfully!');
       setFormData({
         name: '',
