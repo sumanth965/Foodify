@@ -12,7 +12,7 @@ export default function Loginpage() {
   const LoginUser = async (e) => {
     e.preventDefault()
     try {
-      const response = await axios.post('https://foodifyy-backend-g4fx.onrender.com', {
+      const response = await axios.post('https://foodifyy-backend-g4fx.onrender.com/api/v1/user/login', {
         email: email,
         password: password
       });
