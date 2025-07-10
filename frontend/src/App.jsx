@@ -10,9 +10,9 @@ export default function App() {
     <div>
       <Routes>
         <Route path="/" element={<Homepage />}/>
-{/*         <Route path="/" element={<Registerpage />}/> */}
+        <Route path="/" element={<Registerpage />}/>
         <Route path="/contact" element={<Contactpage />}/>
-{/*         <Route path="/login" element={<Loginpage />}/> */}
+        <Route path="/login" element={<Loginpage />}/>
       </Routes>
     </div>
   );
