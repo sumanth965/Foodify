@@ -19,7 +19,8 @@ export default function Registerpage() {
     }
 
     try {
-      const response = await axios.post('https://foodifyy-backend-g4fx.onrender.com', {
+      const response =await axios.post('https://foodifyy-backend-g4fx.onrender.com/api/v1/user/register', {
+
         email: email,
         password: password,
         name: name
