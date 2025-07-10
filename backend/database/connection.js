@@ -1,12 +1,13 @@
 const mongoose = require('mongoose');
-require('dotenv').config(); // Load .env variables
+require('dotenv').config();
 
 function RunServer() {
     try {
         mongoose.connect(process.env.MONGO_URI);
-        console.log('mongodb connected');
+        console.log('MongoDB connected');
     } catch (error) {
-        console.log(error.message);
+        console.error('MongoDB connection error:', error.message);
     }
 }
 
+module.exports = RunServer;
