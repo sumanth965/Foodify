@@ -1,11 +1,13 @@
 const mongoose = require('mongoose');
+require('dotenv').config(); // Load .env variables
 
 function RunServer() {
     try {
-        mongoose.connect('mongodb://localhost:27017/FOODDIIFYY');
+        mongoose.connect(process.env.MONGO_URI);
         console.log('mongodb connected');
     } catch (error) {
-        console.log(error.message)
+        console.log(error.message);
     }
 }
-module.exports = RunServer //exploring the function RunServer
+
+module.exports = RunServer;
