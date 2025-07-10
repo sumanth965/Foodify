@@ -9,5 +9,3 @@ function RunServer() {
         console.log(error.message);
     }
 }
-
-module.exports = RunServer;
