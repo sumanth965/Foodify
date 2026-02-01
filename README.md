@@ -1,11 +1,11 @@
-<h1 align="center">🍔 Foodify</h1>
+<h1 align="center">🍕 Foodify</h1>
 <h3 align="center">Full-Stack Food Ordering Web Application (MERN Stack)</h3>
 
 <p align="center">
-  Foodify is a full-stack food ordering web application developed using the 
-  <b>MERN stack</b> — MongoDB, Express.js, React.js, and Node.js.
-  It provides a seamless platform for users to browse food items, manage carts, 
-  and place orders, while admins can manage food items and customer orders.
+  Foodify is a full-stack food ordering web application built using the 
+  <strong>MERN stack</strong> — MongoDB, Express.js, React.js, and Node.js.  
+  It provides users with a platform to browse food items, manage carts, 
+  place orders, and allows admins to manage products and orders. :contentReference[oaicite:2]{index=2}
 </p>
 
 <hr/>
@@ -15,17 +15,17 @@
 <h3>👤 User Features</h3>
 <ul>
   <li>Browse food categories and items</li>
-  <li>View detailed food information</li>
+  <li>View detailed information about food</li>
   <li>Add food items to cart</li>
-  <li>Place food orders</li>
+  <li>Place orders</li>
   <li>Track order status</li>
-  <li>Responsive and user-friendly UI</li>
+  <li>Responsive and intuitive UI</li>
 </ul>
 
 <h3>🛠 Admin Features</h3>
 <ul>
-  <li>Add, update, and delete food items</li>
-  <li>View all customer orders</li>
+  <li>Add, edit, and delete food items</li>
+  <li>View all orders</li>
   <li>Update order status</li>
 </ul>
 
@@ -35,8 +35,8 @@
 
 <table>
   <tr>
-    <th align="left">Layer</th>
-    <th align="left">Technologies</th>
+    <th>Layer</th>
+    <th>Technologies</th>
   </tr>
   <tr>
     <td>Frontend</td>
@@ -62,7 +62,6 @@
 
 <pre>
 Foodify/
-│
 ├── backend/
 │   ├── controllers/
 │   ├── models/
@@ -80,25 +79,30 @@ Foodify/
 └── README.md
 </pre>
 
+<p>
+This structure separates the backend API from the frontend UI for better modularity
+and easier development workflows. :contentReference[oaicite:3]{index=3}
+</p>
+
 <hr/>
 
 <h2>⚙️ Installation & Setup</h2>
 
 <h3>1️⃣ Clone the Repository</h3>
-
 <pre>
 git clone https://github.com/sumanth965/Foodify.git
 cd Foodify
 </pre>
 
 <h3>2️⃣ Backend Setup</h3>
-
 <pre>
 cd backend
 npm install
 </pre>
 
-<p>Create a <code>.env</code> file inside the <code>backend</code> folder:</p>
+<p>
+Create a <code>.env</code> file in the <code>backend</code> folder with the following variables:
+</p>
 
 <pre>
 MONGO_URI=your_mongodb_connection_string
@@ -113,7 +117,6 @@ npm run dev
 </pre>
 
 <h3>3️⃣ Frontend Setup</h3>
-
 <pre>
 cd frontend
 npm install
@@ -122,13 +125,13 @@ npm start
 
 <hr/>
 
-<h2>🔗 Sample API Endpoints</h2>
+<h2>📡 Sample API Endpoints</h2>
 
 <table>
   <tr>
-    <th align="left">Method</th>
-    <th align="left">Endpoint</th>
-    <th align="left">Description</th>
+    <th>Method</th>
+    <th>Endpoint</th>
+    <th>Description</th>
   </tr>
   <tr>
     <td>GET</td>
@@ -138,7 +141,7 @@ npm start
   <tr>
     <td>GET</td>
     <td>/api/foods/:id</td>
-    <td>Fetch single food item</td>
+    <td>Fetch a single food item</td>
   </tr>
   <tr>
     <td>POST</td>
@@ -152,34 +155,38 @@ npm start
   </tr>
 </table>
 
-<p><i>Note: Some endpoints are protected and require authentication.</i></p>
+<p>
+Note: Some API routes may require authentication tokens. :contentReference[oaicite:4]{index=4}
+</p>
 
 <hr/>
 
 <h2>🗄 Database Design</h2>
 <p>
-The application uses MongoDB collections for <b>Users</b>, <b>Food Items</b>, 
-and <b>Orders</b>. Detailed schema information is available in 
-<code>REST_DATABASE.docx</code>.
+Foodify uses MongoDB for data persistence. The key collections include:
+</p>
+<ul>
+  <li>Users</li>
+  <li>Food Items</li>
+  <li>Orders</li>
+</ul>
+
+<p>
+Refer to the <code>REST_DATABASE.docx</code> file for detailed schema documentation. :contentReference[oaicite:5]{index=5}
 </p>
 
 <hr/>
 
 <h2>📜 License</h2>
-<p>This project is licensed under the <b>MIT License</b>.</p>
+<p>This project is licensed under the <strong>MIT License</strong>. :contentReference[oaicite:6]{index=6}</p>
 
 <hr/>
 
 <h2>👨‍💻 Author</h2>
 <p>
-<b>Sumanth</b><br/>
-GitHub:
-<a href="https://github.com/sumanth965" target="_blank">
-  https://github.com/sumanth965
-</a>
+<strong>Sumanth</strong><br/>
+GitHub: <a href="https://github.com/sumanth965" target="_blank">github.com/sumanth965</a> :contentReference[oaicite:7]{index=7}
 </p>
-
-<hr/>
 
 <p align="center">
   ⭐ If you like this project, don’t forget to give it a star!
